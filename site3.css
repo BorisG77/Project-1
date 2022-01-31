@@ -1,0 +1,402 @@
+/*---------------------desktop---------------------*/
+
+/* body-start */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: auto;
+  font-family: Helvetica;
+  padding: 0 10% 0 10%;
+  background-color: #b1b0b2;
+}
+
+/* body end */
+
+/* header start */
+.zaglavlje {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.head1 {
+  display: flex;
+  justify-content: left;
+  height: 130px;
+  background-color: black;
+  flex: 1 1 auto;
+}
+
+h1 {
+  color: #b1b0b2;
+  background-color: black;
+  font-size: 6.5vw;
+  padding: auto;
+  margin: auto;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}
+
+.head3 {
+  display: flex;
+  justify-content: right;
+  height: 130px;
+  background-color: black(48, 136, 84);
+  flex: 1 1 auto;
+}
+
+/* header end */
+
+/* navigation start */
+
+#hamnav {
+  width: 100%;
+  background: #000;
+  margin-top: 10px;
+}
+
+#hamitems .tabs {
+  display: flex;
+}
+
+.tabs li {
+  list-style: none;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 7px;
+  color: #b1b0b2;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+
+#hamitems li:hover {
+  background: #222;
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/* navigation end */
+
+/* container start */
+
+.container {
+  margin-top: 10px;
+  position: relative;
+}
+
+.tab-content {
+  display: none;
+  background: black;
+  color: #b1b0b2;
+  padding: 15px;
+  text-indent: 50px;
+  border-radius: 7px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tab-content.current {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+/* container end */
+
+/* mainbox start */
+.mainbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex: 1;
+  justify-content: center;
+}
+
+.box1 {
+  flex: 1 1 300px;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  background-color: #8f8f8f;
+  padding: 20px;
+  text-indent: 50px;
+  text-align: center;
+}
+
+.box2 {
+  flex-direction: column;
+  flex: 0 0 500px;
+  margin: 10px;
+}
+
+.small1 {
+  flex: 0 0;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #8f8f8f;
+  border: 1px solid black;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+#pic1 {
+  width: 100%;
+  max-width: 500px;
+  max-height: 350px;
+}
+
+.small2 {
+  flex: 0 0;
+  text-align: center;
+  padding: 10px;
+  background-color: #8f8f8f;
+  border: 1px solid black;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.piechart {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+#piechart {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* mainbox end */
+
+/* members start */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.card {
+  flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  background-color: #8f8f8f;
+}
+
+.card img {
+  max-width: auto;
+  max-height: 130px;
+  margin-bottom: 20px;
+  padding: 0px 30px 0px 30px;
+  background-color: black;
+}
+
+.card .text {
+  padding: 0 20px 20px;
+}
+
+.card .text > button {
+  background: black;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+/* cards end */
+
+/* avards start */
+
+.avards {
+  margin: 20px 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* avards end */
+
+/* footer start */
+
+footer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0);
+}
+
+.imgleft {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  background-color: rgb(0, 0, 0);
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.footercenter {
+  display: flex;
+  flex-direction: column;
+  color: #b1b0b2;
+  font-size: 10px;
+  justify-content: space-around;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.imgright {
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  background-color: black;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+/* footer end */
+
+/*------------------mobile-------------------------*/
+
+@media screen and (max-width: 720px) {
+  /*  footer start */
+
+  .zaglavlje {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+
+  .head1 {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+  }
+
+  h1 {
+    color: #b1b0b2;
+    background-color: black;
+    font-size: 6.5vw;
+    padding: auto;
+    margin: auto;
+  }
+
+  .head3 {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: right;
+    flex: 1;
+  }
+
+  /* footer end */
+
+  /* navigation start */
+
+  #hamitems .tabs {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #222;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 0;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+
+  /* navigation end */
+
+  /* mainbox start */
+  .mainbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .box1 {
+    flex: 1 1 300px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    background-color: #8f8f8f;
+    padding: 20px;
+    text-indent: 50px;
+    text-align: center;
+    width: inherit;
+  }
+
+  .box2 {
+    flex-direction: column;
+    flex: 0 1 auto;
+    margin: 10px;
+    align-items: center;
+    width: 80%;
+  }
+
+  .small1 img {
+    width: inherit;
+  }
+
+  .small1 {
+    flex: 0 0;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #8f8f8f;
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+
+  .small2 {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #8f8f8f;
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+
+  #piechart {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* mainbox end */
+}
